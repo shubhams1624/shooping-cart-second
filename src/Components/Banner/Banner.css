@@ -1,0 +1,34 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #f2f2f2;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .banner {
+    height: 200px; 
+  }
+
+  .banner img {
+    max-width: 90%; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .banner {
+    height: 150px; 
+  }
+
+  .banner img {
+    max-width: 80%; 
+  }
+}

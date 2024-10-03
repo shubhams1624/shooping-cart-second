@@ -1,0 +1,39 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+.hero {
+    height: 75vh; 
+    background: linear-gradient(180deg, #fed1ff, #e1ffea22 60%);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    width: 100vw; 
+    box-sizing: border-box; 
+}
+
+
+
+
+@media (max-width: 768px) {
+    .hero {
+        height: 65vh; 
+        background-size: contain; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh; 
+        background-size: contain; 
+        padding: 10px; 
+    }
+}

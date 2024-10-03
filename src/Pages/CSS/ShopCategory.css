@@ -1,0 +1,137 @@
+.shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 82%;
+}
+
+.img {
+    width: 100%; /* Ensure the image covers the container width */
+    height: 100%; /* Ensure the image covers the container height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block;
+}
+
+.shopcategory-indexsort {
+    display: flex;
+    margin: 0px 170px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #888;
+}
+
+.shopcategory-sort p span {
+    font-weight: 600;
+}
+
+.shopcategory-product {
+    margin: 20px 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+}
+
+.category-loadmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.pagination {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the pagination controls */
+    align-items: center; /* Align items vertically */
+    margin: 20px 0; /* Add some margin above and below */
+}
+
+.pagination button {
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Add some padding */
+    margin: 0 5px; /* Margin between buttons */
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.pagination button:disabled {
+    background-color: #ccc; /* Grey background for disabled buttons */
+    cursor: not-allowed; /* Not allowed cursor for disabled buttons */
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.pagination span {
+    margin: 0 10px; /* Margin between span and buttons */
+    font-size: 16px; /* Font size for page info */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .shopcategory-banner {
+        width: 90%; /* Use a larger percentage for smaller screens */
+        margin: 20px auto; /* Adjust margins */
+    }
+
+    .shopcategory-indexsort {
+        flex-direction: column; /* Stack sort options vertically */
+        margin: 0; /* Reset margins */
+    }
+
+    .shopcategory-sort {
+        margin-bottom: 10px; /* Add spacing between sort options */
+    }
+
+    .shopcategory-product {
+        margin: 20px 20px; /* Adjust margins for smaller screens */
+        grid-template-columns: repeat(2, 1fr); /* Show 2 items per row */
+    }
+
+    .category-loadmore {
+        width: 80%; /* Make load more button wider */
+    }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .shopcategory-banner {
+        width: 85%; /* Adjust width for tablets */
+        margin: 30px auto; /* Moderate margins */
+    }
+
+    .shopcategory-product {
+        margin: 20px 50px; /* Moderate margins */
+        grid-template-columns: repeat(3, 1fr); /* Show 3 items per row */
+    }
+
+    .category-loadmore {
+        width: 250px; /* Adjust width */
+    }
+}
+
+/* Media Query for Desktop Devices */
+@media (min-width: 1024px) {
+    .shopcategory-indexsort {
+        margin: 0px 170px; /* Maintain original margin */
+    }
+
+    .shopcategory-product {
+        margin: 20px 170px; /* Maintain original margin */
+        grid-template-columns: repeat(4, 1fr); /* Show 4 items per row */
+    }
+}

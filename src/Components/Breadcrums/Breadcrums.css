@@ -1,0 +1,27 @@
+.breadcrum {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #5e5e5e;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 180px;
+    text-transform: capitalize;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .breadcrum {
+        font-size: 14px; /* Smaller font size for tablets */
+        margin: 10px 100px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .breadcrum {
+        font-size: 12px; /* Even smaller font size for mobile */
+        margin: 10px 20px; /* Reduce margin for mobile */
+        gap: 4px; /* Reduce gap between items */
+    }
+}

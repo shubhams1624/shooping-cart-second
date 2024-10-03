@@ -1,0 +1,149 @@
+.newsletter {
+    width: 65%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 240px;
+    background: linear-gradient(180deg, white, black 60%);
+    gap: 30px;
+    margin-top: 250px;
+}
+
+.newsletter h1 {
+    color: #454545;
+    font-size: 54px;
+    font-weight: 500;
+}
+
+.newsletter p {
+    color: #454545;
+    font-size: 20px;
+}
+
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    width: 730px;
+    border-radius: 88px;
+    border: 1px solid;
+}
+
+.newsletter input {
+    width: 500px;
+    margin-left: 35px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+}
+
+.newsletter div button {
+    width: 210px;
+    height: 70px;
+    border-radius: 80px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .newsletter {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Let height adjust automatically */
+        padding: 0px 20px; /* Reduce padding */
+        margin-bottom: 100px; /* Adjust margin-bottom */
+        margin-top: 100px; /* Adjust margin-top */
+    }
+
+    .newsletter h1 {
+        font-size: 36px; /* Reduce font size */
+    }
+
+    .newsletter p {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .newsletter div {
+        width: 100%; /* Full width */
+        flex-direction: column; /* Stack elements vertically */
+        gap: 20px; /* Add gap between input and button */
+        padding: 20px;
+    }
+
+    .newsletter input {
+        width: 100%; /* Full width for input */
+        margin-left: 0; /* Remove left margin */
+        padding: 10px;
+    }
+
+    .newsletter div button {
+        width: 100%; /* Full width for button */
+        height: 60px; /* Adjust button height */
+    }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .newsletter {
+        width: 80%; /* Adjust width */
+        padding: 0px 40px; /* Reduce padding */
+    }
+
+    .newsletter h1 {
+        font-size: 44px; /* Reduce font size */
+    }
+
+    .newsletter p {
+        font-size: 18px; /* Slightly smaller font */
+    }
+
+    .newsletter div {
+        width: 600px; /* Adjust width for input and button container */
+    }
+
+    .newsletter input {
+        width: 400px; /* Adjust input width */
+    }
+
+    .newsletter div button {
+        width: 180px; /* Adjust button width */
+        height: 60px; /* Adjust button height */
+    }
+}
+
+/* Media Query for Desktop Devices */
+@media (min-width: 1024px) {
+    .newsletter {
+        width: 65%; /* Standard width */
+        padding: 0px 140px; /* Standard padding */
+    }
+
+    .newsletter h1 {
+        font-size: 54px; /* Standard font size */
+    }
+
+    .newsletter p {
+        font-size: 20px; /* Standard font size */
+    }
+
+    .newsletter div {
+        width: 730px; /* Standard width */
+    }
+
+    .newsletter input {
+        width: 500px; /* Standard input width */
+    }
+
+    .newsletter div button {
+        width: 210px; /* Standard button width */
+    }
+}

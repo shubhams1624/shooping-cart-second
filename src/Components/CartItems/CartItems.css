@@ -1,0 +1,150 @@
+.cartitems {
+    margin: 100px;
+  }
+  
+  .cartitems hr {
+    height: 3px;
+    background-color: #e2e2e2;
+    border: 0;
+  }
+  
+  .cartitems-format-main {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr 1fr 1fr; /* Define column sizes */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ccc;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .cartitems-format-main p {
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .cartitems-format {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  .carticon-product-icon {
+    height: 62px;
+  }
+  
+  .cartitems-remove-icon {
+    width: 15px;
+    margin: 0px 40px;
+    cursor: pointer;
+  }
+  
+  .cartitems-quantity {
+    width: 64px;
+    height: 50px;
+    border: 2px solid #ebebeb;
+    background: #fff;
+  }
+  
+  .cartitems-down {
+    display: flex;
+    margin: 100px 0px;
+  }
+  
+  .cartitems-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 4px;
+  }
+  
+  .cartitems-total-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+  }
+  
+  .btn {
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .btn:hover {
+    background: #e54b4b;
+  }
+  
+  
+  .btn:active {
+    background: #d43e3e;
+  }
+  
+  .btn {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .btn:focus {
+    outline: 2px solid #ff5a5a;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .cartitems {
+      margin: 50px;
+    }
+  
+    .cartitems-format-main {
+      grid-template-columns: 2fr 1fr 1fr 1fr; 
+      padding: 10px;
+    }
+  
+    .cartitems-total {
+      margin-right: 100px; 
+    }
+  
+    .btn {
+      width: 200px; 
+      height: 50px; 
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .cartitems {
+      margin: 20px;
+    }
+  
+    .cartitems-format-main {
+      grid-template-columns: 1fr 1fr; 
+      padding: 5px;
+    }
+  
+    .cartitems-total {
+      margin-right: 20px;
+    }
+  
+    .cartitems-format {
+      font-size: 15px; 
+    }
+  
+    .btn {
+      width: 150px; 
+      height: 45px;
+      font-size: 14px;
+    }
+  }
+  

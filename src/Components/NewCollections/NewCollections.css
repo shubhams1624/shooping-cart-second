@@ -1,0 +1,101 @@
+.new_collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.new_collections h1 {
+    color: #171717;
+    font-size: 100px;
+    font-weight: 700;
+    margin: 0;
+    margin-inline-start: 1000px;
+}
+
+.new_collections hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.new_collections_item {
+    display: flex; /* Use flexbox to align items horizontally */
+    flex-direction: row; /* Ensure items are in a row */
+    gap: 30px; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    justify-content: center; /* Center items horizontally if they don't take up full width */
+    margin-top: 50px; /* Adjust the top margin */
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four-column layout */
+    margin-top: 50px;
+    gap: 30px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .new_collections h1 {
+        font-size: 50px; /* Reduce font size */
+        margin-inline-start: 0; /* Reset margin */
+    }
+
+    .new_collections hr {
+        width: 150px; /* Adjust hr width */
+        height: 4px;
+    }
+
+    .new_collections_item {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Reduce gap */
+    }
+
+    .collections {
+        grid-template-columns: 1fr 1fr; /* Two-column layout */
+        gap: 20px;
+    }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .new_collections h1 {
+        font-size: 70px; /* Adjust font size */
+        margin-inline-start: 0; /* Reset margin */
+    }
+
+    .new_collections hr {
+        width: 180px; /* Adjust hr width */
+    }
+
+    .new_collections_item {
+        gap: 25px;
+    }
+
+    .collections {
+        grid-template-columns: 1fr 1fr 1fr; /* Three-column layout */
+        gap: 25px;
+    }
+}
+
+/* Media Query for Desktop Devices */
+@media (min-width: 1024px) {
+    .new_collections h1 {
+        font-size: 100px; /* Standard font size */
+        margin-inline-start: 1000px; /* Original margin */
+    }
+
+    .new_collections hr {
+        width: 200px; /* Standard hr width */
+    }
+
+    .collections {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Four-column layout */
+        gap: 30px; /* Standard gap */
+    }
+}

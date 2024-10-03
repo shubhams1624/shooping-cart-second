@@ -1,0 +1,90 @@
+.relatedproducts {
+    margin: 20px 20px;
+    padding: 20px;
+    max-width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.relatedproducts h1 {
+    color: #171717;
+    font-size: 70px;
+    font-weight: 900;
+    align-items: center;
+    display: flex;
+    padding-right: 200px;
+}
+
+.relatedproducts hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.relatedproducts-item { /* Individual item styling */
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row; /* Change to a column layout */
+    gap: 20px; 
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .relatedproducts {
+        padding: 15px; /* Adjust padding for smaller screens */
+        margin: 10px; /* Reduce margin */
+    }
+
+    .relatedproducts h1 {
+        font-size: 30px; /* Reduce font size for heading */
+        padding-right: 10px; /* Reduce padding */
+    }
+
+    .relatedproducts-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        gap: 10px; /* Reduce gap between items */
+    }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .relatedproducts {
+        padding: 20px; /* Moderate padding */
+    }
+
+    .relatedproducts h1 {
+        font-size: 50px; /* Adjust font size for tablets */
+        padding-right: 100px; /* Moderate padding */
+    }
+
+    .relatedproducts-item {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px; /* Adjust gap for tablet screens */
+    }
+}
+
+/* Media Query for Desktop Devices */
+@media (min-width: 1024px) {
+    .relatedproducts {
+        padding: 20px; /* Standard padding */
+    }
+
+    .relatedproducts h1 {
+        font-size: 70px; /* Standard font size */
+        padding-right: 200px; /* Standard padding */
+    }
+
+    .relatedproducts-item {
+        flex-direction: row; /* Keep items in a row for larger screens */
+        gap: 20px; /* Standard gap */
+    }
+}

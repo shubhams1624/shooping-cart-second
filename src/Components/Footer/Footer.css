@@ -1,0 +1,133 @@
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: rgb(239, 239, 244);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.footer-logo p {
+    color: #383838;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: #252525;
+    font-size: 20px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+
+.footer-links li {
+    cursor: pointer;
+}
+
+
+.footer-social-icon {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+
+.footer-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.footer-icons-container img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+.footer-copywright {
+    color: #1a1a1a;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-logo p {
+        font-size: 36px;
+    }
+
+    .footer-social-icon {
+        gap: 15px;
+    }
+
+    .footer-icons-container {
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+    }
+
+    .footer-icons-container img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .footer-logo p {
+        font-size: 28px;
+    }
+
+    .footer-links {
+        font-size: 16px;
+    }
+
+    .footer-icons-container {
+        width: 30px;
+        height: 30px;
+        padding: 6px;
+    }
+
+    .footer-icons-container img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .footer-copywright {
+        font-size: 18px;
+    }
+}

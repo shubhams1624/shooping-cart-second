@@ -1,0 +1,68 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular_item {
+    display: flex; /* Use flexbox to align items horizontally */
+    flex-direction: row; /* Ensure items are in a row */
+    gap: 30px; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    justify-content: center; /* Center items horizontally if they don't take up full width */
+    margin-top: 50px; /* Adjust the top margin */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .popular h1 {
+        font-size: 32px; /* Reduce font size for mobile */
+        text-align: center; /* Center text */
+    }
+
+    .popular_item {
+        gap: 20px; /* Reduce gap for mobile */
+        margin-top: 30px; /* Reduce top margin */
+    }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .popular h1 {
+        font-size: 40px; /* Adjust font size for tablets */
+    }
+
+    .popular_item {
+        gap: 25px; /* Slightly reduce gap for tablets */
+    }
+}
+
+/* Media Query for Desktop Devices */
+@media (min-width: 1024px) {
+    .popular {
+        height: 90vh; /* Keep standard height for desktop */
+    }
+
+    .popular h1 {
+        font-size: 50px; /* Standard font size */
+    }
+
+    .popular_item {
+        gap: 30px; /* Standard gap for desktop */
+    }
+}

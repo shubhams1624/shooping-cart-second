@@ -1,0 +1,132 @@
+.offers {
+    width: 65%;
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 160px;
+    background: linear-gradient(180deg, #e9e6e9 0%, #e1ffea22 60%);
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offers-left h1 {
+    color: #171717;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.offers-left p {
+    color: #171717;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.offers-left button {
+    width: 282px;
+    height: 70px;
+    border-radius: 35px;
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .offers {
+        width: 90%; /* Full width on mobile */
+        height: auto; /* Adjust height to auto */
+        flex-direction: column; /* Stack left and right sections vertically */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .offers-left h1 {
+        font-size: 40px; /* Reduce font size */
+    }
+
+    .offers-left p {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .offers-left button {
+        width: 100%; /* Full width button */
+        height: 60px; /* Adjust height */
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .offers-right {
+        justify-content: center; /* Center content on smaller screens */
+        padding: 20px;
+    }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .offers {
+        width: 80%; /* Adjust width */
+        height: 50vh; /* Adjust height */
+        padding: 20px 60px; /* Adjust padding */
+    }
+
+    .offers-left h1 {
+        font-size: 60px; /* Adjust font size */
+    }
+
+    .offers-left p {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .offers-left button {
+        width: 240px; /* Adjust button width */
+        height: 65px; /* Adjust button height */
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .offers-right {
+        padding: 40px; /* Adjust padding */
+    }
+}
+
+/* Media Query for Desktop Devices */
+@media (min-width: 1024px) {
+    .offers {
+        width: 65%; /* Standard width */
+        height: 60vh; /* Standard height */
+        padding: 0px 140px; /* Standard padding */
+    }
+
+    .offers-left h1 {
+        font-size: 80px; /* Standard font size */
+    }
+
+    .offers-left p {
+        font-size: 20px; /* Standard font size */
+    }
+
+    .offers-left button {
+        width: 282px; /* Standard button width */
+        height: 70px; /* Standard button height */
+        font-size: 22px; /* Standard font size */
+    }
+
+    .offers-right {
+        padding: 50px; /* Standard padding */
+    }
+}
