@@ -1,0 +1,139 @@
+.addproduct {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    padding: 30px 50px;
+    margin: 20px auto; /* Center the container */
+    border-radius: 6px;
+    background: white;
+}
+
+.addproduct-itemfield {
+    width: 100%;
+    background: #f4f4f4;
+    font-size: 16px;
+    padding: 10px; /* Add some padding for better spacing */
+    border-radius: 4px; /* Optional: make the background fields rounded */
+}
+
+.addproduct-itemfield input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 15px;
+    border: 1px solid #c3c3c3;
+    outline: none;
+    color: #7b7b7b;
+    font-family: "poppins";
+    font-size: 14px;
+}
+
+.addproduct-price {
+    display: flex;
+    gap: 20px; /* Adjust gap to fit within container */
+    justify-content: space-between; /* Align items with space between */
+}
+
+.add-product-selecter {
+    width: 100%; /* Allow the select to fill available space */
+    height: 50px;
+    font-size: 14px;
+    color: #7b7b7b;
+    border: 1px solid #7b7b7b8d;
+    border-radius: 4px;
+    padding: 0 10px; /* Add padding inside the select */
+}
+
+.addproduct-thumbnail-img { /* Fixed typo from 'thumnail' */
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    object-fit: contain;
+    margin: 10px 0;
+}
+
+.addproduct-btn {
+    margin-top: 20px;
+    width: 160px;
+    height: 50px;
+    border-radius: 6px;
+    background: #6069ff;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .addproduct {
+        padding: 20px; /* Reduce padding on smaller screens */
+        margin: 10px; /* Adjust margins */
+    }
+
+    .addproduct-itemfield {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .addproduct-itemfield input {
+        height: 40px; /* Reduce height for inputs */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .addproduct-price {
+        flex-direction: column; /* Stack price fields vertically */
+    }
+
+    .add-product-selecter {
+        height: 40px; /* Reduce height for select */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .addproduct-btn {
+        width: 100%; /* Full width for the button */
+    }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .addproduct {
+        padding: 25px; /* Moderate padding for tablets */
+        margin: 15px; /* Adjust margins */
+    }
+
+    .addproduct-itemfield {
+        font-size: 15px; /* Adjust font size for tablets */
+    }
+
+    .addproduct-itemfield input,
+    .add-product-selecter {
+        height: 45px; /* Adjust height for inputs/select */
+    }
+
+    .addproduct-btn {
+        width: 150px; /* Adjust button width */
+    }
+}
+
+/* Media Query for Desktop Devices */
+@media (min-width: 1024px) {
+    .addproduct {
+        padding: 30px 50px; /* Maintain original padding */
+    }
+
+    .addproduct-itemfield {
+        font-size: 16px; /* Maintain original font size */
+    }
+
+    .addproduct-itemfield input,
+    .add-product-selecter {
+        height: 50px; /* Maintain original height */
+    }
+
+    .addproduct-btn {
+        width: 160px; /* Maintain original button width */
+    }
+}

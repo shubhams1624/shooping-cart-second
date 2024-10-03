@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px #0000;
+    margin-bottom: 1px;
+    background: white;
+    margin-top: 0px;
+    height: 50px;
+    width: 100%; /* Changed width to 100% for full-width navigation */
+}
+
+.nav-logo {
+    width: 200px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px; /* Reduced padding for smaller screens */
+        height: 60px; /* Increased height for better touch targets */
+    }
+
+    .nav-logo {
+        width: 150px; /* Reduced logo width for smaller screens */
+    }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        padding: 10px 40px; /* Moderate padding for tablets */
+        height: 55px; /* Slightly increased height */
+    }
+
+    .nav-logo {
+        width: 180px; /* Adjusted logo width for tablets */
+    }
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 15px 60px; /* Maintain original padding for larger screens */
+        height: 50px; /* Maintain original height */
+    }
+
+    .nav-logo {
+        width: 200px; /* Maintain original logo width */
+    }
+}

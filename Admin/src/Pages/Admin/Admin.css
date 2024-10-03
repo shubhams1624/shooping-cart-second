@@ -1,0 +1,30 @@
+.admin {
+    display: flex; /* Default display for larger screens */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .admin {
+        flex-direction: column; /* Change to column layout for mobile devices */
+        align-items: center; /* Center items horizontally */
+        padding: 10px; /* Add padding for better spacing */
+    }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .admin {
+        flex-direction: row; /* Maintain row layout for tablets */
+        justify-content: space-between; /* Space items evenly */
+        padding: 20px; /* Adjust padding for a moderate layout */
+    }
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 1024px) {
+    .admin {
+        flex-direction: row; /* Maintain row layout for larger screens */
+        justify-content: flex-start; /* Align items to the start */
+        padding: 30px; /* Maintain original padding */
+    }
+}

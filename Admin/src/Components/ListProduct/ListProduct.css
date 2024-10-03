@@ -1,0 +1,74 @@
+.listproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 740px;
+    padding: 10px 40px;
+    margin: 30px;
+    border-radius: 6px;
+    background: white;
+}
+
+.listproduct-format-main {
+    display: flex;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr; /* Fixed typo: '1 fr' to '1fr' */
+    gap: 120px;
+    width: 100%;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.listproduct-format {
+    align-items: center;
+    font-weight: 500;
+}
+
+.listproduct-remove-icon {
+    cursor: pointer;
+    margin: auto;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .listproduct {
+        padding: 10px 20px; /* Reduce padding for smaller screens */
+        margin: 20px; /* Adjust margins */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .listproduct-format-main {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 30px; /* Reduce gap between items */
+        font-size: 16px; /* Reduce font size for readability */
+    }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .listproduct {
+        padding: 10px 30px; /* Moderate padding for tablets */
+        margin: 25px; /* Adjust margins */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .listproduct-format-main {
+        gap: 60px; /* Reduce gap for better spacing on tablets */
+        font-size: 18px; /* Adjust font size for tablets */
+    }
+}
+
+/* Media Query for Desktop Devices */
+@media (min-width: 1024px) {
+    .listproduct {
+        padding: 10px 40px; /* Maintain original padding */
+        height: 740px; /* Maintain original height */
+    }
+
+    .listproduct-format-main {
+        gap: 120px; /* Maintain original gap */
+        font-size: 20px; /* Maintain original font size */
+    }
+}
